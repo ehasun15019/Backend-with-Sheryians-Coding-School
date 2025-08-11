@@ -1,0 +1,4 @@
+1. Object.freeze() object ar যেকোনো মান কে থেমে দেই । তারমানে পরে আর object ke update kora jai na
+
+
+2. function is object 
