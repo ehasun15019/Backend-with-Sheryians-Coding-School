@@ -25,3 +25,15 @@
                 console.log("done");
             }
         });
+    
+    c. rename() দিয়ে কিভাবে সেই নতুন file কে rename করা যাই 
+
+    Example:
+
+        fs.rename("hello.txt", "hi.txt", function (err) {
+            if (err) {
+                console.log("Error");
+            } else {
+                console.log("done");
+            }
+        });
