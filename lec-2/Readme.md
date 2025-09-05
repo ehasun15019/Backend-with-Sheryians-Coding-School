@@ -83,15 +83,15 @@
                 }
             })
 
-        note: এখনে যদি folder ar ভিতরে কোণ কিছু থাকে তাহলে error pabo.. Folder empty takle error pabo na.. এই problem ta fix korar জন্য নিছের example টা follow koron
+    note: এখনে যদি folder ar ভিতরে কোণ কিছু থাকে তাহলে error pabo.. Folder empty takle error pabo na.. এই problem ta fix korar জন্য নিছের example টা follow koron
 
         Example: 
 
             fs.rmdir("./copy", {recursive: true}, function(err) {
-    if(err) {
-        console.log(err.message);
-    } else {
-        console.log("Done");      
-    }
-})
+                if(err) {
+                    console.log(err.message);
+                } else {
+                    console.log("Done");      
+                }
+            })
     
