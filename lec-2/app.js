@@ -25,7 +25,15 @@ const fs = require("fs");
 //   }
 // });
 
-fs.copyFile("hi.txt", "./copy/file-copy.text", function(err) {
+// fs.copyFile("hi.txt", "./copy/file-copy.text", function(err) {
+//     if(err) {
+//         console.log("err");
+//     } else {
+//         console.log("Done");      
+//     }
+// })
+
+fs.unlink("hi.txt", function(err) {
     if(err) {
         console.log("err");
     } else {

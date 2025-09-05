@@ -58,3 +58,16 @@
         })
 
     
+    e. unlink() দিয়ে কিভাবে সেই নতুন file কে Delete kora jai :
+
+    Example:
+
+        fs.unlink("hi.txt", function(err) {
+            if(err) {
+                console.log("err");
+            } else {
+                console.log("Done");      
+            }
+        })
+
+    
