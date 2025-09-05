@@ -70,4 +70,28 @@
             }
         })
 
+
+    f. rmdir() দিয়ে কিভাবে একটা folder ka delete করা যাই:
+
+        Example:
+
+            fs.rmdir("./copy", function(err) {
+                if(err) {
+                    console.log(err.message);
+                } else {
+                    console.log("Done");      
+                }
+            })
+
+        note: এখনে যদি folder ar ভিতরে কোণ কিছু থাকে তাহলে error pabo.. Folder empty takle error pabo na.. এই problem ta fix korar জন্য নিছের example টা follow koron
+
+        Example: 
+
+            fs.rmdir("./copy", {recursive: true}, function(err) {
+    if(err) {
+        console.log(err.message);
+    } else {
+        console.log("Done");      
+    }
+})
     
