@@ -17,10 +17,18 @@ const fs = require("fs");
 // });
 
 
-fs.rename("hello.txt", "hi.txt", function (err) {
-  if (err) {
-    console.log("Error");
-  } else {
-    console.log("done");
-  }
-});
+// fs.rename("hello.txt", "hi.txt", function (err) {
+//   if (err) {
+//     console.log("Error");
+//   } else {
+//     console.log("done");
+//   }
+// });
+
+fs.copyFile("hi.txt", "./copy/file-copy.text", function(err) {
+    if(err) {
+        console.log("err");
+    } else {
+        console.log("Done");      
+    }
+})
