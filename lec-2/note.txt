@@ -3,3 +3,6 @@
 2. ryan dahl google chrome ar v8 engin a js  dia backend ar  code lekar  cinta vabna kore
 
 3. npm init -> ai code ar maddome package.json Install kore
+
+
+4. *** file.Read -> system 
