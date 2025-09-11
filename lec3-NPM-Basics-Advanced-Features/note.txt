@@ -1,0 +1,13 @@
+1. npm understanding
+
+2. npm install process
+
+    -> npm install <package-name>
+
+3. npm uninstall process
+
+    -> npm uninstall <package-name>
+
+4. package.json file a script section porte hobe jekhane amra amader command gulo likhbo
+5. custom command gulo run korar jonno amra npm run <script-name> use korbo
+    
