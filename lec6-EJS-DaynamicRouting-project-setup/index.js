@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.send("This is a Ehasun_dev");
+  res.render("index");
 });
 
 app.listen(PORT, function () {
