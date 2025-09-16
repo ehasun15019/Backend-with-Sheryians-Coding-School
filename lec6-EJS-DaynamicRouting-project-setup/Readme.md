@@ -19,3 +19,10 @@
         
         ** create public folder and in the public folder create 3 folder (images, javascripts, stylesheet)
 
+
+************ note ***********
+kono ejs page a jekono folder/file path a "public" name ta dao jabe na 
+
+
+6. dynamic routing 
+

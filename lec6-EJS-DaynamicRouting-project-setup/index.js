@@ -17,6 +17,14 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
+app.get("/:username", function (req, res) {
+  res.send(`Welcome, ${req.params.username}`);
+});
+
+app.get("/:username/:age", function (req, res) {
+  res.send(`Welcome, ${req.params.username} of ${req.params.age}`);
+});
+
 app.listen(PORT, function () {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
