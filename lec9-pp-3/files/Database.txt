@@ -1,1 +1,1 @@
-this is database 
+A database is a structured system for storing, organizing, and managing data efficiently. It allows fast access, updates, and relationships between different pieces of information.
