@@ -1,0 +1,19 @@
+{
+  "name": "lec11-crudoparation-mongodb",
+  "version": "1.0.0",
+  "description": "1. mongodb installation\r 2. mongodb connection\r 3. schema design\r 4. model\r 5. CRUD operation\r    - Create\r    - Read\r    - Update\r    - Delete",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
