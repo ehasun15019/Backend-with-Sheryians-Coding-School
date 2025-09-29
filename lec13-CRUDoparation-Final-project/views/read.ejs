@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Read page</title>
+</head>
+<body>
+    <div class="w-full h-full p-10 text-white">
+        <div class="w-72 flex justify-between items-center">
+            <h1 class="text-3xl tracking-tighter mb-3">All User</h1>
+            <a href="/" class="text-blue-500">Go to home</a>
+        </div>
+
+        <div class="users flex flex-wrap gap-3">
+          <% if (user.length === 0) { %>
+            <p class="text-center text-gray-400 mt-6">No user yet</p>
+            <% } else { %>
+            <% user.map(function(everyUser) { %>
+                <div class="user w-72 p-4 bg-zinc-800 rounded-lg">
+                    <div class="w-full h-52 rounded-lg overflow-hidden">
+                        <img src="<%= everyUser.image %>" alt="" class="object-cover h-full w-full">
+                    </div>
+
+                    <h3 class="text-xl tracking-tighter mt-3"><%= everyUser.name %></h3>
+                    <h5 class="text-zinc-500"><%= everyUser.email %></h5>
+
+                    <div class="flex gap-3 mt-6 justify-between">
+                        <a href="/edit/<%= everyUser._id %>" class="text-green-600 rounded-lg">Edit User</a>
+                        <a href="/delete/<%= everyUser._id %>" class="text-red-600 rounded-lg">Delete User</a>
+                    </div>
+                </div>
+            <% }) %>
+          <% } %>
+        </div>
+    </div>
+</body>
+</html>
