@@ -7,12 +7,10 @@ const bcrypt = require("bcrypt")
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-    // go to npm website and search bcrypt then you get it
-    bcrypt.genSalt(11, function(err, salt) {
-        bcrypt.hash("wp-1615019", salt, function(err, hash) {
-            console.log(hash);
-        });
-    });
+    // in this code compare that is the password true ot false
+   bcrypt.compare("wp-1615019", "$2b$11$nkVmOp2J9xtoeYh.huOXyOigZak3y/gNQZ0ziieHZmpTwPepunz.u", function(err, result) {
+    console.log(result);
+   });
 });
 
 
